@@ -1,0 +1,81 @@
+
+
+git st
+ 
+
+git remote
+
+git remote add origin https://github.com/piyushchavhan999/Python-By-Piyush.git
+
+git remote
+=origin
+
+https://github.com/piyushchavhan999/demo.git
+
+git remote -v
+
+git push -u origin master
+or
+git push  origin master
+ 
+piyus@LAPTOP-BV5Q2NU0 MINGW64 ~/OneDrive/Desktop/Python By Piyush (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/piyushchavhan999/Python-By-Piyush.git'
+
+
+
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+
+$ eval "$(ssh-agent -s)"
+> Agent pid 59566
+
+$ ssh-add ~/.ssh/id_ed25519 = identity added
+
+$ tail ~/.ssh/id_rsa.pub
+
+got an key
+
+cpoy key 🗝 and then paste to it in add ssh key slot and add it
+
+now finally do this command  git push -u origin master
+ 
+and ur local repo is unloading on github i.e. it is converting in remote repo
+
+
+
+
+
+GitHub: Working with Remote Repositories | Git Tutorials #13
+Hey everyone welcome, Today we are going to learn how to work with remote repositories. So let’s get started. 
+
+Let’s start by going to Github’s official website and creating an account. After you have created your account you need to go to the home page and click on the create a new repository option. Now give your repository a name and description. Now click on create repository. Now it will show you a page for quick setup. Now let’s make our local repository a remote repository.
+
+
+
+ 
+ 
+
+Steps:
+Go to your local directory and open git bash there.
+Now we have 2 options, 1: If we have not created a git repository in our system then follow the first method, 2: We have a git repo in our local system we just want to push it to the remote system then follow the method 2.
+We are following Method 2 Here.
+So let’s copy the code on git’s website which looks like this “git remote add origin git@github.com:yourusername/repositoryname.git” and paste it to the git bash and press enter.
+Now we will paste the second command which pushes the files onto the remote server which is “git push -u origin master”.
+It will give you an error that access is denied. Now let’s tackle this.
+To fix it, go to your account settings on github, then SSH and GPG keys. Then click on the new SSH key, add a title. Now for the key, open git bash and follow the simple steps.
+On git bash type the following edit your email and press enter: “ssh-keygen -t rsa -b 4096 -C "your_email@example.com" ”
+Now just simply press enter 3 times.
+Now run this command “eval $(ssh-agent -s)”.
+Now run this “ssh-add ~/.ssh/id_rsa”.
+Now on git bash type this to reveal your key “tail ~/.ssh/id_rsa.pub”.
+Now it will show you the ssh key. Just simply copy it.
+And now let’s head back to the github SSH key page and paste the key to the key field, press add ssh key. And done!
+Now if you run “git push -u origin master” it will run and push your files to github.
+Now you can make changes on your local git repo and push the changes to the remote repo swiftly.
+ 
+
+So that’s it. I hope this has cleared your doubts. Thank you for watching.
+
+
+ 
